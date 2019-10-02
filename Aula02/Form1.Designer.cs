@@ -39,11 +39,13 @@
             this.LblAltura = new System.Windows.Forms.Label();
             this.TxtAltura = new System.Windows.Forms.TextBox();
             this.BtnCalcular = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TxtNome
             // 
-            this.TxtNome.Location = new System.Drawing.Point(259, 35);
+            this.TxtNome.Location = new System.Drawing.Point(71, 12);
             this.TxtNome.Name = "TxtNome";
             this.TxtNome.Size = new System.Drawing.Size(327, 20);
             this.TxtNome.TabIndex = 0;
@@ -51,7 +53,7 @@
             // LblNome
             // 
             this.LblNome.AutoSize = true;
-            this.LblNome.Location = new System.Drawing.Point(218, 38);
+            this.LblNome.Location = new System.Drawing.Point(30, 15);
             this.LblNome.Name = "LblNome";
             this.LblNome.Size = new System.Drawing.Size(41, 13);
             this.LblNome.TabIndex = 1;
@@ -60,7 +62,7 @@
             // LblNasc
             // 
             this.LblNasc.AutoSize = true;
-            this.LblNasc.Location = new System.Drawing.Point(193, 64);
+            this.LblNasc.Location = new System.Drawing.Point(5, 41);
             this.LblNasc.Name = "LblNasc";
             this.LblNasc.Size = new System.Drawing.Size(66, 13);
             this.LblNasc.TabIndex = 2;
@@ -69,7 +71,7 @@
             // CbxDias
             // 
             this.CbxDias.FormattingEnabled = true;
-            this.CbxDias.Location = new System.Drawing.Point(259, 61);
+            this.CbxDias.Location = new System.Drawing.Point(71, 38);
             this.CbxDias.Name = "CbxDias";
             this.CbxDias.Size = new System.Drawing.Size(75, 21);
             this.CbxDias.TabIndex = 3;
@@ -77,7 +79,7 @@
             // CbxMeses
             // 
             this.CbxMeses.FormattingEnabled = true;
-            this.CbxMeses.Location = new System.Drawing.Point(340, 61);
+            this.CbxMeses.Location = new System.Drawing.Point(152, 38);
             this.CbxMeses.Name = "CbxMeses";
             this.CbxMeses.Size = new System.Drawing.Size(76, 21);
             this.CbxMeses.TabIndex = 4;
@@ -85,15 +87,15 @@
             // CbxAnos
             // 
             this.CbxAnos.FormattingEnabled = true;
-            this.CbxAnos.Location = new System.Drawing.Point(422, 61);
+            this.CbxAnos.Location = new System.Drawing.Point(234, 38);
             this.CbxAnos.Name = "CbxAnos";
-            this.CbxAnos.Size = new System.Drawing.Size(158, 21);
+            this.CbxAnos.Size = new System.Drawing.Size(164, 21);
             this.CbxAnos.TabIndex = 5;
             // 
             // LblPeso
             // 
             this.LblPeso.AutoSize = true;
-            this.LblPeso.Location = new System.Drawing.Point(218, 92);
+            this.LblPeso.Location = new System.Drawing.Point(30, 69);
             this.LblPeso.Name = "LblPeso";
             this.LblPeso.Size = new System.Drawing.Size(34, 13);
             this.LblPeso.TabIndex = 6;
@@ -101,7 +103,7 @@
             // 
             // TxtPeso
             // 
-            this.TxtPeso.Location = new System.Drawing.Point(259, 88);
+            this.TxtPeso.Location = new System.Drawing.Point(71, 65);
             this.TxtPeso.Name = "TxtPeso";
             this.TxtPeso.Size = new System.Drawing.Size(75, 20);
             this.TxtPeso.TabIndex = 7;
@@ -109,7 +111,7 @@
             // LblAltura
             // 
             this.LblAltura.AutoSize = true;
-            this.LblAltura.Location = new System.Drawing.Point(215, 120);
+            this.LblAltura.Location = new System.Drawing.Point(27, 97);
             this.LblAltura.Name = "LblAltura";
             this.LblAltura.Size = new System.Drawing.Size(37, 13);
             this.LblAltura.TabIndex = 8;
@@ -117,14 +119,14 @@
             // 
             // TxtAltura
             // 
-            this.TxtAltura.Location = new System.Drawing.Point(258, 117);
+            this.TxtAltura.Location = new System.Drawing.Point(70, 91);
             this.TxtAltura.Name = "TxtAltura";
             this.TxtAltura.Size = new System.Drawing.Size(76, 20);
             this.TxtAltura.TabIndex = 9;
             // 
             // BtnCalcular
             // 
-            this.BtnCalcular.Location = new System.Drawing.Point(258, 153);
+            this.BtnCalcular.Location = new System.Drawing.Point(71, 120);
             this.BtnCalcular.Name = "BtnCalcular";
             this.BtnCalcular.Size = new System.Drawing.Size(75, 23);
             this.BtnCalcular.TabIndex = 10;
@@ -132,11 +134,30 @@
             this.BtnCalcular.UseVisualStyleBackColor = true;
             this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(234, 120);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Mes";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(152, 120);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
+            this.textBox1.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(413, 196);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.TxtAltura);
             this.Controls.Add(this.LblAltura);
@@ -168,6 +189,8 @@
         private System.Windows.Forms.Label LblAltura;
         private System.Windows.Forms.TextBox TxtAltura;
         private System.Windows.Forms.Button BtnCalcular;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
